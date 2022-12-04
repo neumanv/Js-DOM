@@ -1,0 +1,10 @@
+<html>
+<body>
+    <script>
+        let body = document.body;
+        body.innerHTML = "<!--" + body.tagName + "-->";
+        alert( body.firstChild.data ); // ¿qué hay aquí?
+        //El alert muestra "BODY", porque .tagName siempre está en mayúsculas
+    </script>
+</body>
+</html>
