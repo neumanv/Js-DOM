@@ -1,10 +1,10 @@
 "use strict"
 
 //¿El nodo <div> del DOM?
-console.log(document.body.childNodes[i]);
+console.log(document.getElementsByTagName("div"));
+
 //¿El nodo <ul> del DOM?
-for(let element of document.body.children){
-    console.log(element);
-}
+console.log(document.getElementsByTagName("ul"));
+
 //El segundo <li> (con Peter Parker)?
-document.getElementById("ul").innerHTML = list.lastElementChild.innerHTML;
+console.log(document.getElementsByTagName("li")[1]);
