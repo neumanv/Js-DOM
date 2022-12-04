@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Act 12</title>
+</head>
+<body>
+    <table id="table">
+        aaa
+        <tr>
+            <td>Test</td>
+        </tr>
+    </table>
+    <script>
+        alert(table); // la tabla, tal como debería ser
+        table.remove();     // ¿Por qué aún está "aaa" en el documento?
+
+        //Porque aaa no pertenece a ningún elemento de la tabla, así que lo recoge como si estuviera fuera
+    </script>
+</body>
+</html>
