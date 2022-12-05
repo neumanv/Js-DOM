@@ -17,7 +17,7 @@ td4.style.backgroundColor = 'red';
 let td5 = tabla.rows[4].cells[4];
 td5.style.backgroundColor = 'red';*/
 
-for(let i = 0; i > tabla.length; i++){
+for(let i = 0; i > tabla.rows.length; i++){
     let color = tabla.rows[i].cells[i];
     color.style.backgroundColor = "red";
 }
