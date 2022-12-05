@@ -3,5 +3,5 @@
 function borrar(){
 
     let boton = document.getElementById("borrar");
-    boton.innerHTML = " ";
+    boton.disabled = true; 
 }
