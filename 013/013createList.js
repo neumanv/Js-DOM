@@ -7,7 +7,6 @@ while(true){
     if(obj === null){
         break;
     }else{
-
         let ul = document.createElement("ul");
         document.body.appendChild(ul);
         
