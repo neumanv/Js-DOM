@@ -1,5 +1,7 @@
 "use strict"
 
-// establecer un estilo para un enlace
-let link = document.querySelector('a');
-link.style.color = 'purple';
+let links = document.querySelectorAll('a[href*="://"]');
+
+for(let link of links){
+    link.style.color = "orange";
+}
