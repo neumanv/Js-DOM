@@ -7,3 +7,9 @@ nuevo.value = "flamenco";
 nuevo.text = "Flamenco";
 
 genres.appendChild(nuevo); 
+
+function muestra(){
+    
+    alert(genres.value);
+}
+
