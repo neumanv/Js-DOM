@@ -2,6 +2,7 @@
 
 let tabla = document.body.firstElementChild;
 
+/*      VERSION CUTRE
 let td1 = tabla.rows[0].cells[0];
 td1.style.backgroundColor = 'red';
 
@@ -15,9 +16,8 @@ let td4 = tabla.rows[3].cells[3];
 td4.style.backgroundColor = 'red';
 
 let td5 = tabla.rows[4].cells[4];
-td5.style.backgroundColor = 'red';
+td5.style.backgroundColor = 'red';*/
 
-/*for(let i = 0; i > tabla.rows.length; i++){
-    let color = tabla.rows[i].cells[i];
-    color.style.backgroundColor = "red";
-}*/
+for(let i = 0; i < tabla.rows.length; i++){
+    tabla.rows[i].cells[i].style.backgroundColor = "red";
+}
