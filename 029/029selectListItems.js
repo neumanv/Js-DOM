@@ -1,29 +1,21 @@
 "use strict"
 
-ul.onclick = function (event) {
+var ul = document.getElementById("ul");
 
-    if(event.target.tagName != "LI") return;
+for (var i = 0; i < ul.children.length; i++) {
+    ul.children[i].addEventListener("click", function(event){
 
-    if(event.metaKey){
-        toggleSelect(event.target);
-    }else{
-        singleSelect(event.target);
-    }
+        //Comprobar si se pulsa ctrl
+        if(event.ctrlKey){
+            //Cambiar si se pulsa
+            this.classList.toggle("selected");
+        }else{
+            //Sólo se puede pulsar una
+            for (var j = 0; j < ul.children.length; j++) {
+                ul.children[j].classList.remove("selected");
+            }
 
-}
-
-ul.onmousedown = function(){
-    return false;
-};
-
-function toggleSelect(li) {
-    li.classList.toggle("selected");
-}
-
-function singleSelect(li) {
-    let selected = ul.querySelectorAll(".selected");
-    for (let elem of selected) {
-        elem.classList.remove("selected");
-    }
-    li.classList.add("selected");
+            this.classList.add("selected");
+        }
+    });
 }
